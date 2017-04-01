@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/spilt_line" />
+
+    <include
+        android:id="@+id/layout_input"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/moment_comment_input" />
+
+    <LinearLayout
+        android:id="@+id/ly_foot_func"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/ic_facekeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/view_keyboardpopwindow" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EmojiKeyBoard</string>
+    <string name="content_description"></string>
+
+    <string name="moments_publish">发表</string>
+    <string name="moment_detail_comment_hint">评论</string>
+</resources>

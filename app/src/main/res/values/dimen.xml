@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indicator_margin">10dp</dimen>
+    <dimen name="bar_height">35dp</dimen>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <dimen name="horizontalspit_view_height">0.6dp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_125">125sp</dimen>
+    <dimen name="text_190">190sp</dimen>
+    <dimen name="text_nomal">@dimen/text_14</dimen>
+    <dimen name="timeline_habit_width">80dp</dimen>
+
+
+    <dimen name="moments_margin_06">6dp</dimen>
+    <dimen name="moments_margin_08">8dp</dimen>
+    <dimen name="moments_margin_16">16dp</dimen>
+    <dimen name="moments_margin_20">20dp</dimen>
+</resources>

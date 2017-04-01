@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/view_spit1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontalspit_view_height"
+        android:layout_alignParentTop="true"
+        layout="@layout/ic_spitview_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/view_switch_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view_spit1"
+        android:background="@color/theme_boudary_color"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/btn_switch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/content_description"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/icon_face_pop" />
+    </LinearLayout>
+
+    <com.android.lvxin.emoticon.view.EmoticonsPageView
+        android:id="@+id/view_epv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_eiv"
+        android:layout_below="@+id/view_switch_bar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical" />
+
+    <com.android.lvxin.emoticon.view.EmoticonsIndicatorView
+        android:id="@+id/view_eiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_spit2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/indicator_margin" >
+    </com.android.lvxin.emoticon.view.EmoticonsIndicatorView>
+
+    <include
+        android:id="@+id/view_spit2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontalspit_view_height"
+        android:layout_above="@+id/view_etv"
+        layout="@layout/ic_spitview_horizontal"
+        android:visibility="gone" />
+
+    <com.android.lvxin.emoticon.view.EmoticonsToolBarView
+        android:id="@+id/view_etv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+</RelativeLayout>
